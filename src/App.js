@@ -6,7 +6,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { NavLink } from "react-router-dom";
 
-import Home from "./Home.js";
+import { Home } from "./Home.js";
 import About from "./About.js";
 import Projects from "./Projects.js";
 import Experiences from "./Experiences.js";
@@ -21,17 +21,25 @@ class App extends React.Component {
       title: "Ngoh Wei Yue",
       headerLinks: [
         { title: "Home", path: "/" },
-        { title: "About", path: "/About" },
-        { title: "Projects", path: "/Projects" },
-        { title: "Experiences", path: "/Experiences" },
-        { title: "Skills", path: "/Skills" },
-        { title: "Contact", path: "/Contact" },
+        { title: "About" , path: "/about" },
+        { title: "Projects", path: "/projects" },
+        { title: "Experiences", path: "/experiences" },
+        { title: "Skills", path: "/skills" },
+        { title: "Contact", path: "/contact" },
       ],
       home: {
-        title: "Hello;",
+        title: "hello;"
       },
       about: {
-        title: "Me;",
+        title: "me;",
+        subTitle: "my life thus far;",
+        text: `I am currently a year 2 student pursuing a degree in Bachelor of Computing (Honours), 
+        Computer Science at the National University of Singapore. As a highly motivated individual, 
+        I enjoy overcoming challenges and pushing through my limits. I am someone who is seriously 
+        passionate about software development as well as big data technologies. I aspire to develop 
+        cutting-edge tech solutions to solve modern-day problems. Committed to self-improvement, 
+        I work on small side projects during my
+        free time.`
       },
       projects: {
         title: "What I've worked on;",
@@ -43,7 +51,7 @@ class App extends React.Component {
         title: "What I can do;",
       },
       contact: {
-        title: "Let's talk;",
+        title: "let's get in touch;",
       },
     };
   }
@@ -89,7 +97,7 @@ class App extends React.Component {
           <Route
             path="/About"
             exact
-            render={() => <About title={this.state.about.title} />}
+            render={() => <About title={this.state.about.title} text={this.state.about.text}/>}
           />
           <Route
             path="/Projects"
