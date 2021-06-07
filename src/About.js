@@ -4,7 +4,7 @@ import Media from "react-bootstrap/Media";
 
 import Template from "./Template";
 import Content from "./Content";
-import imageMe from "./resources/pictures/me.jpg";
+import imgMe from "./resources/pictures/me.jpg";
 
 export default function About(props) {
   return (
@@ -21,13 +21,13 @@ export default function About(props) {
           modern-day problems. Committed to self-improvement, I work on small
           side projects during my free time.
         </div> */}
-        
+
         <Media fluid>
           <img
             width={446.5}
             height={595}
             className="mr-3 img-fluid"
-            src={imageMe}
+            src={imgMe}
             alt="me"
           />
           <Media.Body className="sm-12">

@@ -42,7 +42,8 @@ class App extends React.Component {
         free time.`
       },
       projects: {
-        title: "my works;",
+        title: "my projects;",
+        subTitle: "selected works;"
       },
       experiences: {
         title: "my experiences;",
@@ -102,7 +103,7 @@ class App extends React.Component {
           <Route
             path="/Projects"
             exact
-            render={() => <Projects title={this.state.projects.title} />}
+            render={() => <Projects title={this.state.projects.title} subTitle={this.state.projects.subTitle} />}
           />
           <Route
             path="/Experiences"
