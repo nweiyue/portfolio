@@ -10,14 +10,14 @@ import ParticleBackground from "./ParticleBackground";
 export function Home(props) {
   return (
     <header>
-      <Container className="intro">
-        <Row className="hello ml-3 mb-3">
-          <Col>hello;</Col>
-        </Row>
-        <Row className="ml-3">
-          <Col>this is <span className="name sm-12">Wei Yue;</span></Col>
-        </Row>
-      </Container>
+      <div class="container">
+        <ParticleBackground />
+        <div class="center">
+        <p>hello;</p>
+        <p>i'm <span class="intro-name">WEI YUE;</span></p>
+        <p class="intro-welcome">Welcome to my site;</p>
+        </div>
+      </div>
     </header>
   );
 }

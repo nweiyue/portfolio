@@ -1,14 +1,40 @@
 header {
-    height: 100vh;
-    background-color: #0a1724;
+  background-color: #0a1724;
 }
 
-.intro {
-    font-size: 100px;
+.container {
+  background-color: #0a1724;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  position: relative; /* Important */
+  width: 100% important!; /* Any width */
+  height: 100vh; /* Any height */
+}
+
+.center {
+    position: absolute; /* Important */
+    top: 70%; /* Position Y halfway in */
+    left: 55%; /* Position X halfway in */
+    transform: translate(-50%, -50%); /* Move it halfway back(x,y) */
+    width: 100%; /* Any width */
+    height: 50%; /* Any height */
+    background: transparent;
+    font-weight: normal;
+    font-size: 80px;
     color: #827f78;
-}
+    padding: 0;
+    margin: 0;
+  }
 
-.name {
-    font-size: 150px;
-    color: #e3e6e6;
+  .intro-name {
+      color: #e3e6e6;
+      font-size: 100px;
+      font-weight: bolder;
+  }
+
+  .intro-welcome {
+    color: #827f78;
+    font-size: 50px;
+    font-weight: lighter;
 }

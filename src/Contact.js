@@ -5,6 +5,7 @@ import Button from "react-bootstrap/Button";
 import Template from "./Template";
 import Content from "./Content";
 import "./styles/Contact.css";
+import Axios from "axios";
 
 export default class Contact extends React.Component {
   constructor(props) {
@@ -15,27 +16,47 @@ export default class Contact extends React.Component {
       name: "",
       diabled: false,
       emailSent: null,
-    }
+    };
   }
 
   handleChange = (event) => {
     const target = event.target;
-    const value = target.type === 'checkbox' ? target.checked : target.value;
+    const value = target.type === "checkbox" ? target.checked : target.value;
     const name = target.name;
 
     this.setState({
-      [name]: value
+      [name]: value,
     });
-  }
+  };
 
   handleSubmit = (event) => {
     event.preventDefault();
 
     this.setState({
-      disabled: true
-      // emailSent: true
+      disabled: true,
     });
-  }
+
+    Axios.post("/api/email", this.state)
+    .then((res) => {
+      if (res.data.success) {
+        this.setState({
+          disabled: false,
+          emailSent: true
+        });
+      } else {
+        this.setState({
+          disabled: false,
+          emailSent: false
+        });
+      }
+    })
+    .catch (err => {
+      this.setState({
+        disbaled: false,
+        emailSent: false
+      });
+    })
+  };
 
   render() {
     return (
@@ -72,12 +93,21 @@ export default class Contact extends React.Component {
                 onChange={this.handleChange}
               />
             </Form.Group>
-            <Button className="d-inline-block" variant="primary" type="Submit" disabled={this.state.disabled}>
+            <Button
+              className="d-inline-block"
+              variant="primary"
+              type="Submit"
+              disabled={this.state.disabled}
+            >
               Send
             </Button>
 
-            {this.state.emailSent === true && <p className="d-inline success-msg">Email sent successfully</p>}
-            {this.state.emailSent === false && <p className="d-inline err-msg">Error sending email</p>}
+            {this.state.emailSent === true && (
+              <p className="d-inline success-msg">Email sent successfully</p>
+            )}
+            {this.state.emailSent === false && (
+              <p className="d-inline err-msg">Error sending email</p>
+            )}
           </Form>
         </Content>
       </div>
