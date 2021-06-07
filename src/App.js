@@ -14,6 +14,9 @@ import Skills from "./Skills.js";
 import Contact from "./Contact.js";
 import Footer from "./Footer.js";
 
+import Image from "react-bootstrap/Image";
+import logo from "./resources/pictures/logo.png";
+
 class App extends React.Component {
   constructor(props) {
     super(props);
@@ -21,14 +24,14 @@ class App extends React.Component {
       title: "Ngoh Wei Yue",
       headerLinks: [
         { title: "Home", path: "/" },
-        { title: "About" , path: "/about" },
+        { title: "About", path: "/about" },
         { title: "Projects", path: "/projects" },
         { title: "Experiences", path: "/experiences" },
         { title: "Skills", path: "/skills" },
         { title: "Contact", path: "/contact" },
       ],
       home: {
-        title: "hello;"
+        title: "hello;",
       },
       about: {
         title: "me;",
@@ -39,11 +42,11 @@ class App extends React.Component {
         passionate about software development as well as big data technologies. I aspire to develop 
         cutting-edge tech solutions to solve modern-day problems. Committed to self-improvement, 
         I work on small side projects during my
-        free time.`
+        free time.`,
       },
       projects: {
         title: "my projects;",
-        subTitle: "selected works;"
+        subTitle: "selected works;",
       },
       experiences: {
         title: "my experiences;",
@@ -63,8 +66,9 @@ class App extends React.Component {
         <Container className="p-0" fluid>
           <Navbar bg="light" expand="md" className="border-bottom" fluid>
             <Navbar.Brand>
-              Wei Yue
-              {/* <img src="./resources/pictures/WEIYUE copy.png" alt="logo"></img> */}
+              <NavLink className="nav-link" exact to="/">
+                <Image src={logo} />
+              </NavLink>
             </Navbar.Brand>
             <Navbar.Toggle className="border-0" />
             <Navbar.Collapse>
@@ -98,12 +102,22 @@ class App extends React.Component {
           <Route
             path="/About"
             exact
-            render={() => <About title={this.state.about.title} text={this.state.about.text}/>}
+            render={() => (
+              <About
+                title={this.state.about.title}
+                text={this.state.about.text}
+              />
+            )}
           />
           <Route
             path="/Projects"
             exact
-            render={() => <Projects title={this.state.projects.title} subTitle={this.state.projects.subTitle} />}
+            render={() => (
+              <Projects
+                title={this.state.projects.title}
+                subTitle={this.state.projects.subTitle}
+              />
+            )}
           />
           <Route
             path="/Experiences"
