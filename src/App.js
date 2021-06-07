@@ -42,13 +42,13 @@ class App extends React.Component {
         free time.`
       },
       projects: {
-        title: "What I've worked on;",
+        title: "my works;",
       },
       experiences: {
-        title: "What I've been through;",
+        title: "my experiences;",
       },
       skills: {
-        title: "What I can do;",
+        title: "my skills;",
       },
       contact: {
         title: "let's get in touch;",
