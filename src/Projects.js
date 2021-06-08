@@ -16,9 +16,69 @@ import imgAtas from "./resources/pictures/atas_thumbnail.png";
 import imgDuke from "./resources/pictures/duke_thumbnail.png";
 import imgPortfolioWebsiteV1 from "./resources/pictures/portfolioWebsiteV1_thumbnail.png";
 
+import "./styles/Projects.css";
+
 export default function Projects(props) {
   return (
     <div>
+      <style type="text/css">
+        {`
+        .btn-github {
+        background-color: #24292e;
+        color: #f9fafa;
+        }
+
+        .btn-github:hover {
+          background-color: #f9fafa;
+          color: #24292e;
+          border-color: #24292e;
+        }
+
+        .btn-web {
+            background-color: #04c2c9;
+            color: #ffffff;
+        }
+    
+        .btn-web:hover {
+          background-color: #ffffff;
+          color: #04c2c9;
+          border-color: #04c2c9;
+        }
+
+        .btn-youtube {
+          background-color: #ff0000;
+          color: #ffffff;
+        }
+        
+        .btn-youtube:hover {
+          background-color: #ffffff;
+          color: #ff0000;
+          border-color: #ff0000
+        }
+
+        .btn-game {
+          background-color: #ff8600;
+          color: #f9fafa;
+        }
+        
+        .btn-game:hover {
+          background-color: #f9fafa;
+          color: #ff8600;
+          border-color: #ff8600;
+        }
+
+        .btn-medium {
+          background-color: #343434;
+          color: #ffffff;
+        }
+        
+        .btn-medium:hover {
+          background-color: #ffffff;
+          color: #343434;
+          border-color: #343434;
+        }
+      `}
+      </style>
       <Template title={props.title} subTitle={props.subTitle} />
       <Content>
         {/* First row of projects */}
@@ -35,7 +95,7 @@ export default function Projects(props) {
               </Card.Text>
               <ButtonGroup>
                 <Button
-                  clasName="github-btn"
+                  variant="github"
                   onClick={(e) => {
                     e.preventDefault();
                     window.open(
@@ -47,7 +107,7 @@ export default function Projects(props) {
                   <i className="fab fa-github"></i> Github
                 </Button>
                 <Button
-                  clasName="web-btn"
+                  variant="web"
                   onClick={(e) => {
                     e.preventDefault();
                     window.open(
@@ -72,7 +132,7 @@ export default function Projects(props) {
                 tasks in classes as seamless as possible.
               </Card.Text>
               <Button
-                className="github-btn"
+                variant="github"
                 onClick={(e) => {
                   e.preventDefault();
                   window.open(
@@ -95,7 +155,7 @@ export default function Projects(props) {
                 their tasks and at the same time acts as a personal chat bot.
               </Card.Text>
               <Button
-                className="github-btn"
+                variant="github"
                 onClick={(e) => {
                   e.preventDefault();
                   window.open("https://github.com/nweiyue/ip", "_blank");
@@ -119,7 +179,7 @@ export default function Projects(props) {
               </Card.Text>
               <ButtonGroup>
                 <Button
-                  clasName="github-btn"
+                  variant="github"
                   onClick={(e) => {
                     e.preventDefault();
                     window.open(
@@ -131,7 +191,7 @@ export default function Projects(props) {
                   <i className="fab fa-github"></i> Github
                 </Button>
                 <Button
-                  clasName="youtube-btn"
+                  variant="youtube"
                   onClick={(e) => {
                     e.preventDefault();
                     window.open(
@@ -154,7 +214,7 @@ export default function Projects(props) {
               </Card.Text>
               <ButtonGroup>
                 <Button
-                  clasName="github-btn"
+                  variant="github"
                   onClick={(e) => {
                     e.preventDefault();
                     window.open("https://github.com/nweiyue/Snake", "_blank");
@@ -163,7 +223,7 @@ export default function Projects(props) {
                   <i className="fab fa-github"></i> Github
                 </Button>
                 <Button
-                  clasName="game-btn"
+                  variant="game"
                   onClick={(e) => {
                     e.preventDefault();
                     window.open("https://nweiyue.github.io/Snake/", "_blank");
@@ -187,7 +247,7 @@ export default function Projects(props) {
               </Card.Text>
               <ButtonGroup>
                 <Button
-                  clasName="github-btn"
+                  variant="github"
                   onClick={(e) => {
                     e.preventDefault();
                     window.open(
@@ -199,7 +259,7 @@ export default function Projects(props) {
                   <i className="fab fa-github"></i> Github
                 </Button>
                 <Button
-                  clasName="medium-btn"
+                  variant="medium"
                   onClick={(e) => {
                     e.preventDefault();
                     window.open(
@@ -221,11 +281,11 @@ export default function Projects(props) {
             <Card.Body>
               <Card.Title>RemindMe Bot</Card.Title>
               <Card.Text>
-                RemindMe Bot is a simple python telegram bot that allows users to
-                set reminders base on a timer.
+                RemindMe Bot is a simple python telegram bot that allows users
+                to set reminders base on a timer.
               </Card.Text>
               <Button
-                clasName="github-btn"
+                variant="github"
                 onClick={(e) => {
                   e.preventDefault();
                   window.open(
