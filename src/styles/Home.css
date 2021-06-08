@@ -13,28 +13,39 @@ header {
 }
 
 .center {
-    position: absolute; /* Important */
-    top: 70%; /* Position Y halfway in */
-    left: 55%; /* Position X halfway in */
-    transform: translate(-50%, -50%); /* Move it halfway back(x,y) */
-    width: 100%; /* Any width */
-    height: 50%; /* Any height */
-    background: transparent;
-    font-weight: normal;
-    font-size: 80px;
-    color: #827f78;
-    padding: 0;
-    margin: 0;
-  }
-
-  .intro-name {
-      color: #e3e6e6;
-      font-size: 100px;
-      font-weight: bolder;
-  }
-
-  .intro-welcome {
-    color: #827f78;
-    font-size: 50px;
-    font-weight: lighter;
+  position: absolute; /* Important */
+  top: 70%; /* Position Y halfway in */
+  left: 55%; /* Position X halfway in */
+  transform: translate(-50%, -50%); /* Move it halfway back(x,y) */
+  width: 100%; /* Any width */
+  height: 50%; /* Any height */
+  background: transparent;
+  font-weight: normal;
+  font-size: 80px;
+  color: #827f78;
+  padding: 0;
+  margin: 0;
 }
+
+.intro-name {
+  color: #e3e6e6;
+  font-size: 100px;
+  font-weight: bolder;
+}
+
+.intro-welcome {
+  color: #827f78;
+  font-size: 50px;
+  font-weight: lighter;
+}
+
+.footer-icons a{
+  padding: 3px;
+  color:aqua
+}
+
+.footer-icons a:hover{
+  padding: 3px;
+  color:pink
+}
+

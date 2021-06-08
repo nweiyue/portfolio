@@ -27,7 +27,7 @@ class App extends React.Component {
         { title: "About", path: "/about" },
         { title: "Projects", path: "/projects" },
         { title: "Experiences", path: "/experiences" },
-        { title: "Skills", path: "/skills" },
+        // { title: "Skills", path: "/skills" },
         { title: "Contact", path: "/contact" },
       ],
       home: {
@@ -51,9 +51,9 @@ class App extends React.Component {
       experiences: {
         title: "my experiences;",
       },
-      skills: {
-        title: "my skills;",
-      },
+      // skills: {x
+      //   title: "my skills;",
+      // },
       contact: {
         title: "let's get in touch;",
       },
@@ -66,8 +66,9 @@ class App extends React.Component {
         <Container className="p-0" fluid>
           <Navbar bg="light" expand="md" className="border-bottom" fluid>
             <Navbar.Brand>
-              <NavLink className="nav-link" exact to="/">
-                <Image src={logo} />
+              {/* Wei Yue */}
+              <NavLink className="nav-link p-0" exact to="/">
+                <img src={logo} width="32px" height="auto" alt="logo"/>
               </NavLink>
             </Navbar.Brand>
             <Navbar.Toggle className="border-0" />
@@ -85,9 +86,9 @@ class App extends React.Component {
                 <NavLink className="nav-link" to="/Experiences">
                   Experiences
                 </NavLink>
-                <NavLink className="nav-link" to="/Skills">
+                {/* <NavLink className="nav-link" to="/Skills">
                   Skills
-                </NavLink>
+                </NavLink> */}
                 <NavLink className="nav-link" to="/Contact">
                   Contact
                 </NavLink>
@@ -124,11 +125,11 @@ class App extends React.Component {
             exact
             render={() => <Experiences title={this.state.experiences.title} />}
           />
-          <Route
+          {/* <Route
             path="/Skills"
             exact
             render={() => <Skills title={this.state.skills.title} />}
-          />
+          /> */}
           <Route
             path="/Contact"
             exact

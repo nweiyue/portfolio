@@ -1,9 +1,24 @@
 .success-msg {
-    color: #57a773;
-    padding: 10px 15px;
+  color: #57a773;
+  padding: 10px 15px;
 }
 
 .err-msg {
-    color: #ee6352;
-    padding: 10px 15px;
+  color: #ee6352;
+  padding: 10px 15px;
+}
+
+.socials a {
+  padding: 10px;
+  display: inline-block;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.socials i{
+  color: #ee6352;
+}
+
+.socials i:hover {
+    color:palegoldenrod
 }

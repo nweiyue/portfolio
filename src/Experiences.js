@@ -37,13 +37,22 @@ export default function Experiences(props) {
                   <li>
                     Designed and developed end to end automation solutions which
                     are used to gather and process data from different web
-                    reports, saving at least 30 manpower hours per month on average
+                    reports, saving at least 30 manpower hours per month on
+                    average
                   </li>
                   <li>
-                    Incorporated Python scripts and Excel(SQL) databases with RPA tools to improve performance and reliability of bots
+                    Incorporated Python scripts and Excel(SQL) databases with
+                    RPA tools to improve performance and reliability of bots
                   </li>
                 </ul>
-                <div>Tech stack: <Badge bg="secondary">Automation Anywhere</Badge> <Badge bg="secondary">Python</Badge> <Badge bg="secondary">SQL</Badge></div>
+                <div>
+                  <h6>
+                    Tech stack:{" "}
+                    <Badge bg="secondary">Automation Anywhere</Badge>{" "}
+                    <Badge bg="secondary">Python</Badge>{" "}
+                    <Badge bg="secondary">SQL</Badge>
+                  </h6>
+                </div>
               </Col>
             </Row>
           </Container>
