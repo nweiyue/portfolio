@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./styles/App.css";
+
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
@@ -14,7 +16,6 @@ import Skills from "./Skills.js";
 import Contact from "./Contact.js";
 import Footer from "./Footer.js";
 
-import Image from "react-bootstrap/Image";
 import logo from "./resources/pictures/logo.png";
 
 class App extends React.Component {
@@ -27,7 +28,6 @@ class App extends React.Component {
         { title: "About", path: "/about" },
         { title: "Projects", path: "/projects" },
         { title: "Experiences", path: "/experiences" },
-        // { title: "Skills", path: "/skills" },
         { title: "Contact", path: "/contact" },
       ],
       home: {
@@ -35,25 +35,13 @@ class App extends React.Component {
       },
       about: {
         title: "me;",
-        subTitle: "my life thus far;",
-        text: `I am currently a year 2 student pursuing a degree in Bachelor of Computing (Honours), 
-        Computer Science at the National University of Singapore. As a highly motivated individual, 
-        I enjoy overcoming challenges and pushing through my limits. I am someone who is seriously 
-        passionate about software development as well as big data technologies. I aspire to develop 
-        cutting-edge tech solutions to solve modern-day problems. Committed to self-improvement, 
-        I work on small side projects during my
-        free time.`,
       },
       projects: {
         title: "my projects;",
-        subTitle: "selected works;",
       },
       experiences: {
         title: "my experiences;",
       },
-      // skills: {x
-      //   title: "my skills;",
-      // },
       contact: {
         title: "let's get in touch;",
       },
@@ -64,11 +52,11 @@ class App extends React.Component {
     return (
       <Router>
         <Container className="p-0" fluid>
-          <Navbar bg="light" expand="md" className="border-bottom" fluid>
+          <Navbar bg="bright" expand="md" className="navbar fixed-top" fluid>
             <Navbar.Brand>
               {/* Wei Yue */}
               <NavLink className="nav-link p-0" exact to="/">
-                <img src={logo} width="32px" height="auto" alt="logo"/>
+                <img src={logo} width="32px" height="auto" alt="logo" />
               </NavLink>
             </Navbar.Brand>
             <Navbar.Toggle className="border-0" />
@@ -86,9 +74,6 @@ class App extends React.Component {
                 <NavLink className="nav-link" to="/Experiences">
                   Experiences
                 </NavLink>
-                {/* <NavLink className="nav-link" to="/Skills">
-                  Skills
-                </NavLink> */}
                 <NavLink className="nav-link" to="/Contact">
                   Contact
                 </NavLink>
@@ -125,17 +110,11 @@ class App extends React.Component {
             exact
             render={() => <Experiences title={this.state.experiences.title} />}
           />
-          {/* <Route
-            path="/Skills"
-            exact
-            render={() => <Skills title={this.state.skills.title} />}
-          /> */}
           <Route
             path="/Contact"
             exact
             render={() => <Contact title={this.state.contact.title} />}
           />
-
           <Footer />
         </Container>
       </Router>

@@ -1,9 +1,9 @@
 header {
-  background-color: #0a1724;
+  background-color: #0f1626;
 }
 
-.container {
-  background-color: #0a1724;
+.home-container {
+  background-color: #0f1626;
   margin: 0;
   padding: 0;
   display: flex;
@@ -12,23 +12,23 @@ header {
   height: 100vh; /* Any height */
 }
 
-.center {
+.home-center {
   position: absolute; /* Important */
   top: 70%; /* Position Y halfway in */
   left: 55%; /* Position X halfway in */
   transform: translate(-50%, -50%); /* Move it halfway back(x,y) */
-  width: 100%; /* Any width */
+  width: 80%; /* Any width */
   height: 50%; /* Any height */
   background: transparent;
   font-weight: normal;
   font-size: 80px;
-  color: #827f78;
+  color: #ab987a;
   padding: 0;
   margin: 0;
 }
 
 .intro-name {
-  color: #e3e6e6;
+  color: #ff533d;
   font-size: 100px;
   font-weight: bolder;
 }
@@ -39,13 +39,24 @@ header {
   font-weight: lighter;
 }
 
-.footer-icons a{
+.footer-icons a {
   padding: 3px;
-  color:aqua
+  color: #0f1626;
 }
 
-.footer-icons a:hover{
+.footer-icons a:hover {
   padding: 3px;
-  color:pink
+  color: #ff533d;
 }
 
+.footer {
+  background-color: #f5f5f5;
+}
+
+.navbar {
+  background-color: #f5f5f5;
+}
+
+.about-tools span {
+  color: #827f78;
+}

@@ -5,9 +5,9 @@ import Col from "react-bootstrap/Col";
 
 export default function Footer() {
   return (
-    <footer className="">
+    <footer className="footer">
       <Container fluid>
-        <Row className="border-top justify-content-between p-3">
+        <Row className="justify-content-between p-3">
           <Col className="p-0 footer-icons">
             <a href="https://github.com/nweiyue" target="_blank">
               <i class="fab fa-github-square fa-2x"></i>

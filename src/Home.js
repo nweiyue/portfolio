@@ -1,5 +1,4 @@
 import React from "react";
-import "./styles/Home.css";
 import Jumbotron from "react-bootstrap/Jumbotron";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
@@ -10,12 +9,12 @@ import ParticleBackground from "./ParticleBackground";
 export function Home(props) {
   return (
     <header>
-      <div class="container">
+      <div class="home-container">
         <ParticleBackground />
-        <div class="center">
+        <div class="home-center">
         <p>hello;</p>
         <p>i'm <span class="intro-name">WEI YUE;</span></p>
-        <p class="intro-welcome">Welcome to my site;</p>
+        <p class="intro-welcome">welcome to my site;</p>
         </div>
       </div>
     </header>
