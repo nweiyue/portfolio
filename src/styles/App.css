@@ -1,5 +1,21 @@
-header {
-  background-color: #0f1626;
+.home {
+  min-height: 100vh;
+}
+
+.about {
+  min-height: 100vh;
+}
+
+.projects {
+  min-height: 100vh;
+}
+
+.experiences {
+  min-height: 100vh;
+}
+
+.contact {
+  min-height: 100vh;
 }
 
 .home-container {
@@ -8,7 +24,7 @@ header {
   padding: 0;
   display: flex;
   position: relative; /* Important */
-  width: 100% important!; /* Any width */
+  width: 100vw important!; /* Any width */
   height: 100vh; /* Any height */
 }
 
@@ -58,5 +74,33 @@ header {
 }
 
 .about-tools span {
-  color: #827f78;
+  color: #ff533d;
+}
+
+.experiences-jumbotron {
+  background-color: #f5f5f5 !important;
+}
+
+.experiences-dates {
+  color: #ff533d;
+}
+
+.success-msg {
+  color: #57a773;
+  padding: 10px 15px;
+}
+
+.err-msg {
+  color: #ee6352;
+  padding: 10px 15px;
+}
+
+.contact-icons {
+  text-align: center;
+  padding: 5px;
+}
+
+.contact-icons span {
+  padding-left: 5px;
+  padding-right: 5px;
 }

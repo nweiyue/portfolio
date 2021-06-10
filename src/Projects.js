@@ -1,12 +1,12 @@
 import React from "react";
 
-import Template from "./Template";
-import Content from "./Content";
-
 import Card from "react-bootstrap/Card";
 import CardDeck from "react-bootstrap/CardDeck";
 import Button from "react-bootstrap/Button";
-import ButtonGroup from "react-bootstrap/ButtonGroup";
+import Badge from "react-bootstrap/Badge";
+
+import Template from "./Template";
+import Content from "./Content";
 
 import imgLastMinute from "./resources/pictures/lastMinute_thumbnail.png";
 import imgChampion from "./resources/pictures/champion_thumbnail.png";
@@ -16,11 +16,9 @@ import imgAtas from "./resources/pictures/atas_thumbnail.png";
 import imgDuke from "./resources/pictures/duke_thumbnail.png";
 import imgPortfolioWebsiteV1 from "./resources/pictures/portfolioWebsiteV1_thumbnail.png";
 
-import "./styles/Projects.css";
-
 export default function Projects(props) {
   return (
-    <div>
+    <div className="projects">
       <style type="text/css">
         {`
         .btn-github {
@@ -77,6 +75,11 @@ export default function Projects(props) {
           color: #343434;
           border-color: #343434;
         }
+
+        .badge-custom {
+          background-color: #0f1626;
+          color: #f5f5f5;
+        }
       `}
       </style>
       <Template title={props.title} subTitle={props.subTitle} />
@@ -93,32 +96,37 @@ export default function Projects(props) {
                 used to showcase my past projects. The current website you are
                 on is the new and improved v2.0!
               </Card.Text>
-              <ButtonGroup>
-                <Button
-                  variant="github"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.open(
-                      "https://github.com/nweiyue/Portfolio-Website",
-                      "_blank"
-                    );
-                  }}
-                >
-                  <i className="fab fa-github"></i> Github
-                </Button>
-                <Button
-                  variant="web"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.open(
-                      "https://nweiyue.github.io/Portfolio-Website/",
-                      "_blank"
-                    );
-                  }}
-                >
-                  <i className="fas fa-desktop"></i> Website
-                </Button>
-              </ButtonGroup>
+              <div className="pb-3">
+                <Badge variant="custom">HTML</Badge>{" "}
+                <Badge variant="custom">CSS</Badge>{" "}
+                <Badge variant="custom">JS</Badge>{" "}
+                <Badge variant="custom">React</Badge>{" "}
+              </div>
+              <Button
+                className="mr-3"
+                variant="github"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(
+                    "https://github.com/nweiyue/Portfolio-Website",
+                    "_blank"
+                  );
+                }}
+              >
+                <i className="fab fa-github"></i> Github
+              </Button>
+              <Button
+                variant="web"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(
+                    "https://nweiyue.github.io/Portfolio-Website/",
+                    "_blank"
+                  );
+                }}
+              >
+                <i className="fas fa-desktop"></i> Website
+              </Button>
             </Card.Body>
           </Card>
           {/* ATAS */}
@@ -131,6 +139,12 @@ export default function Projects(props) {
                 efficiency and make their experience of handling administrative
                 tasks in classes as seamless as possible.
               </Card.Text>
+              <div className="pb-3">
+                <Badge variant="custom">Java</Badge>{" "}
+                <Badge variant="custom">CSS</Badge>{" "}
+                <Badge variant="custom">JavaFX</Badge>{" "}
+                <Badge variant="custom">JUnit5</Badge>
+              </div>
               <Button
                 variant="github"
                 onClick={(e) => {
@@ -154,6 +168,12 @@ export default function Projects(props) {
                 Duke is a is a desktop application which allows users to manage
                 their tasks and at the same time acts as a personal chat bot.
               </Card.Text>
+              <div className="pb-3">
+                <Badge variant="custom">Java</Badge>{" "}
+                <Badge variant="custom">CSS</Badge>{" "}
+                <Badge variant="custom">JavaFX</Badge>{" "}
+                <Badge variant="custom">JUnit5</Badge>
+              </div>
               <Button
                 variant="github"
                 onClick={(e) => {
@@ -177,32 +197,38 @@ export default function Projects(props) {
                 redefines users' travel experiences by eliminating travel
                 inconveniences.
               </Card.Text>
-              <ButtonGroup>
-                <Button
-                  variant="github"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.open(
-                      "https://github.com/LeeMingDe/Orbital2020",
-                      "_blank"
-                    );
-                  }}
-                >
-                  <i className="fab fa-github"></i> Github
-                </Button>
-                <Button
-                  variant="youtube"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.open(
-                      "https://www.youtube.com/watch?v=Jg2CCN1vddk&feature=youtu.be",
-                      "_blank"
-                    );
-                  }}
-                >
-                  <i className="fab fa-youtube"></i> Demo
-                </Button>
-              </ButtonGroup>
+              <div className="pb-3">
+                <Badge variant="custom">Java</Badge>{" "}
+                <Badge variant="custom">Android Studio</Badge>{" "}
+                <Badge variant="custom">Firebase</Badge>
+              </div>
+
+              <Button
+                className="mr-3"
+                variant="github"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(
+                    "https://github.com/LeeMingDe/Orbital2020",
+                    "_blank"
+                  );
+                }}
+              >
+                <i className="fab fa-github"></i> Github
+              </Button>
+              <Button
+                variant="youtube"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(
+                    "https://www.youtube.com/watch?v=Jg2CCN1vddk&feature=youtube",
+                    "_blank"
+                  );
+                }}
+              >
+                <i className="fab fa-youtube"></i> Demo
+              </Button>
+  
             </Card.Body>
           </Card>
           <Card style={{ width: "18rem" }}>
@@ -212,26 +238,32 @@ export default function Projects(props) {
               <Card.Text>
                 A copy of the classic snake game. Feel free to try it out!
               </Card.Text>
-              <ButtonGroup>
-                <Button
-                  variant="github"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.open("https://github.com/nweiyue/Snake", "_blank");
-                  }}
-                >
-                  <i className="fab fa-github"></i> Github
-                </Button>
-                <Button
-                  variant="game"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.open("https://nweiyue.github.io/Snake/", "_blank");
-                  }}
-                >
-                  <i className="fas fa-gamepad"></i> Play
-                </Button>
-              </ButtonGroup>
+              <div className="pb-3">
+                <Badge variant="custom">HTML</Badge>{" "}
+                <Badge variant="custom">CSS</Badge>{" "}
+                <Badge variant="custom">JS</Badge>
+              </div>
+       
+              <Button
+                className="mr-3"
+                variant="github"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open("https://github.com/nweiyue/Snake", "_blank");
+                }}
+              >
+                <i className="fab fa-github"></i> Github
+              </Button>
+              <Button
+                variant="game"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open("https://nweiyue.github.io/Snake/", "_blank");
+                }}
+              >
+                <i className="fas fa-gamepad"></i> Play
+              </Button>
+   
             </Card.Body>
           </Card>
           <Card style={{ width: "18rem" }}>
@@ -245,37 +277,43 @@ export default function Projects(props) {
                 this commonly spoken phrase in the sports world, specifically in
                 the NBA.
               </Card.Text>
-              <ButtonGroup>
-                <Button
-                  variant="github"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.open(
-                      "https://github.com/nweiyue/defense_wins_championships_data_analysis",
-                      "_blank"
-                    );
-                  }}
-                >
-                  <i className="fab fa-github"></i> Github
-                </Button>
-                <Button
-                  variant="medium"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    window.open(
-                      "https://medium.com/@nweiyue/nba-offense-win-games-defense-win-championships-is-this-really-the-case-6faefe6d9c9b?source=friends_link&sk=a8356f7c4d3902ee01272cea463e8e88",
-                      "_blank"
-                    );
-                  }}
-                >
-                  <i className="fab fa-medium"></i> Read
-                </Button>
-              </ButtonGroup>
+              <div className="pb-3">
+                <Badge variant="custom">Python</Badge>{" "}
+                <Badge variant="custom">Matplotlib</Badge>{" "}
+                <Badge variant="custom">Seaborn</Badge>
+              </div>
+ 
+              <Button
+                className="mr-3"
+                variant="github"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(
+                    "https://github.com/nweiyue/defense_wins_championships_data_analysis",
+                    "_blank"
+                  );
+                }}
+              >
+                <i className="fab fa-github"></i> Github
+              </Button>
+              <Button
+                variant="medium"
+                onClick={(e) => {
+                  e.preventDefault();
+                  window.open(
+                    "https://medium.com/@nweiyue/nba-offense-win-games-defense-win-championships-is-this-really-the-case-6faefe6d9c9b?source=friends_link&sk=a8356f7c4d3902ee01272cea463e8e88",
+                    "_blank"
+                  );
+                }}
+              >
+                <i className="fab fa-medium"></i> Read
+              </Button>
+          
             </Card.Body>
           </Card>
         </CardDeck>
         {/* Third row of projects */}
-        <CardDeck>
+        <CardDeck className="pb-5">
           <Card style={{ width: "21.3rem" }}>
             <Card.Img variant="top" src={imgRemindMe} />
             <Card.Body>
@@ -284,6 +322,9 @@ export default function Projects(props) {
                 RemindMe Bot is a simple python telegram bot that allows users
                 to set reminders base on a timer.
               </Card.Text>
+              <div className="pb-3">
+                <Badge variant="custom">Python</Badge>
+              </div>
               <Button
                 variant="github"
                 onClick={(e) => {

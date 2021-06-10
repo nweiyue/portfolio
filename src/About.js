@@ -8,11 +8,12 @@ import Col from "react-bootstrap/Col";
 
 import Template from "./Template";
 import Content from "./Content";
+
 import imgMe from "./resources/pictures/me.jpg";
 
 export default function About(props) {
   return (
-    <div>
+    <div className="about">
       <style type="text/css">
         {`
         .btn-resume {
@@ -47,17 +48,19 @@ export default function About(props) {
                   <p className="about-tools">
                     I am an incoming penultimate year student pursuing a degree
                     in Bachelor of Computing (Honours), Computer Science at the
-                    National University of Singapore. My interests lie in full
-                    stack web development as well as artificial intelligence.
-                    Currently, I am interning in GlobalFoundries, a global major
-                    chip manufacturer as an RPA developer. During my free time,
-                    I like to explore new technologies and tools by using them
-                    to build small side projects. Through my school assignments
-                    and side projects, I have become proficient in several tools
-                    and frameworks including <span>React.js</span>,
+                    National University of Singapore. My interests lie in
+                    full-stack web development as well as artificial
+                    intelligence. Currently, I am interning in GlobalFoundries,
+                    a global major chip manufacturer as an RPA developer. During
+                    my free time, I like to explore new technologies and tools
+                    by using them to build small side projects. Through these
+                    side projects, I have managed to learn and apply several
+                    tools and frameworks such as <span>React.js</span>,
                     <span> Node.js</span>, <span>Bootstrap</span> and
-                    <span> PostgreSQL</span>. I am open to any new and exciting
-                    opportunities. :)
+                    <span> PostgreSQL</span>. If you have any interesting
+                    opportunities regarding application(mobile/web/desktop)
+                    development or would like to collaborate, please feel free
+                    to hit me up! :)
                   </p>
                   <Button variant="resume" href="Resume.pdf" target="_blank">
                     View Resume

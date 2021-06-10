@@ -1,22 +1,21 @@
 import React from "react";
 
-import "./styles/App.css";
+import { BrowserRouter as Router, Route} from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import { NavLink } from "react-router-dom";
 
-import { Home } from "./Home.js";
+import Home from "./Home.js";
 import About from "./About.js";
 import Projects from "./Projects.js";
 import Experiences from "./Experiences.js";
-import Skills from "./Skills.js";
 import Contact from "./Contact.js";
 import Footer from "./Footer.js";
 
 import logo from "./resources/pictures/logo.png";
+import "./styles/App.css";
 
 class App extends React.Component {
   constructor(props) {
@@ -52,7 +51,7 @@ class App extends React.Component {
     return (
       <Router>
         <Container className="p-0" fluid>
-          <Navbar bg="bright" expand="md" className="navbar fixed-top" fluid>
+          <Navbar bg="bright" expand="md" className="border-bottom navbar fixed-top" fluid>
             <Navbar.Brand>
               {/* Wei Yue */}
               <NavLink className="nav-link p-0" exact to="/">
