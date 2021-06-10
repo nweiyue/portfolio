@@ -1,6 +1,6 @@
 import React from "react";
 
-import { BrowserRouter as Router, Route} from "react-router-dom";
+import { HashRouter as Router, Route} from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 import Container from "react-bootstrap/Container";
@@ -49,7 +49,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
         <Container className="p-0" fluid>
           <Navbar bg="bright" expand="md" className="border-bottom navbar fixed-top" fluid>
             <Navbar.Brand>
