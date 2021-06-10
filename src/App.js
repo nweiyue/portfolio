@@ -1,6 +1,6 @@
 import React from "react";
 
-import { HashRouter as Router, Route} from "react-router-dom";
+import { HashRouter as Router, Route, Link} from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 import Container from "react-bootstrap/Container";
@@ -54,28 +54,28 @@ class App extends React.Component {
           <Navbar bg="bright" expand="md" className="border-bottom navbar fixed-top" fluid>
             <Navbar.Brand>
               {/* Wei Yue */}
-              <NavLink className="nav-link p-0" exact to="/">
+              <Link className="nav-link p-0" exact to="/">
                 <img src={logo} width="32px" height="auto" alt="logo" />
-              </NavLink>
+              </Link>
             </Navbar.Brand>
             <Navbar.Toggle className="border-0" />
             <Navbar.Collapse>
               <Nav className="ml-auto">
-                <NavLink className="nav-link" exact to="/">
+                <Link className="nav-link" exact to="/">
                   Home
-                </NavLink>
-                <NavLink className="nav-link" to="/About">
+                </Link>
+                <Link className="nav-link" to="/About">
                   About
-                </NavLink>
-                <NavLink className="nav-link" to="/Projects">
+                </Link>
+                <Link className="nav-link" to="/Projects">
                   Projects
-                </NavLink>
-                <NavLink className="nav-link" to="/Experiences">
+                </Link>
+                <Link className="nav-link" to="/Experiences">
                   Experiences
-                </NavLink>
-                <NavLink className="nav-link" to="/Contact">
+                </Link>
+                <Link className="nav-link" to="/Contact">
                   Contact
-                </NavLink>
+                </Link>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
@@ -90,7 +90,6 @@ class App extends React.Component {
             render={() => (
               <About
                 title={this.state.about.title}
-                text={this.state.about.text}
               />
             )}
           />
@@ -100,7 +99,6 @@ class App extends React.Component {
             render={() => (
               <Projects
                 title={this.state.projects.title}
-                subTitle={this.state.projects.subTitle}
               />
             )}
           />
