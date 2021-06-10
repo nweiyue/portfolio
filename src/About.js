@@ -62,7 +62,7 @@ export default function About(props) {
                     development or would like to collaborate, please feel free
                     to hit me up! :)
                   </p>
-                  <Button variant="resume" href="Resume.pdf" target="_blank">
+                  <Button variant="resume" href="../public/Resume.pdf" target="_blank">
                     View Resume
                   </Button>
                 </Media.Body>

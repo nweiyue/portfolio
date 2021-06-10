@@ -1,6 +1,6 @@
 import React from "react";
 
-import { HashRouter as Router, Route, Link} from "react-router-dom";
+import { HashRouter as Router, Route} from "react-router-dom";
 import { NavLink } from "react-router-dom";
 
 import Container from "react-bootstrap/Container";
@@ -49,33 +49,33 @@ class App extends React.Component {
 
   render() {
     return (
-      <Router basename="portfolio/">
+      <Router basename={process.env.PUBLIC_URL}>
         <Container className="p-0" fluid>
           <Navbar bg="bright" expand="md" className="border-bottom navbar fixed-top" fluid>
             <Navbar.Brand>
               {/* Wei Yue */}
-              <Link className="nav-link p-0" exact to="/">
+              <NavLink className="nav-link p-0" exact to="/">
                 <img src={logo} width="32px" height="auto" alt="logo" />
-              </Link>
+              </NavLink>
             </Navbar.Brand>
             <Navbar.Toggle className="border-0" />
             <Navbar.Collapse>
               <Nav className="ml-auto">
-                <Link className="nav-link" exact to="/">
+                <NavLink className="nav-link" exact to="/">
                   Home
-                </Link>
-                <Link className="nav-link" to="/About">
+                </NavLink>
+                <NavLink className="nav-link" to="/About">
                   About
-                </Link>
-                <Link className="nav-link" to="/Projects">
+                </NavLink>
+                <NavLink className="nav-link" to="/Projects">
                   Projects
-                </Link>
-                <Link className="nav-link" to="/Experiences">
+                </NavLink>
+                <NavLink className="nav-link" to="/Experiences">
                   Experiences
-                </Link>
-                <Link className="nav-link" to="/Contact">
+                </NavLink>
+                <NavLink className="nav-link" to="/Contact">
                   Contact
-                </Link>
+                </NavLink>
               </Nav>
             </Navbar.Collapse>
           </Navbar>
@@ -115,19 +115,6 @@ class App extends React.Component {
           <Footer />
         </Container>
       </Router>
-    //   <Router basename="/">
-    //   <div>
-    //     <ul>
-    //       <li><Link to="/">Home</Link></li>
-    //       <li><Link to="/about">About</Link></li>
-    //     </ul>
-
-    //     <hr />
-
-    //     <Route exact path="/" component={Home} />
-    //     <Route path="/about" component={About} />
-    //   </div>
-    // </Router>
     );
   }
 }
