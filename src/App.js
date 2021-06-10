@@ -49,7 +49,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <Router basename={process.env.PUBLIC_URL}>
+      <Router basename="/">
         <Container className="p-0" fluid>
           <Navbar bg="bright" expand="md" className="border-bottom navbar fixed-top" fluid>
             <Navbar.Brand>
@@ -115,6 +115,19 @@ class App extends React.Component {
           <Footer />
         </Container>
       </Router>
+    //   <Router basename="/">
+    //   <div>
+    //     <ul>
+    //       <li><Link to="/">Home</Link></li>
+    //       <li><Link to="/about">About</Link></li>
+    //     </ul>
+
+    //     <hr />
+
+    //     <Route exact path="/" component={Home} />
+    //     <Route path="/about" component={About} />
+    //   </div>
+    // </Router>
     );
   }
 }
