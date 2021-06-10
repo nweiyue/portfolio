@@ -49,7 +49,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <Router basename="/">
+      <Router basename="portfolio/">
         <Container className="p-0" fluid>
           <Navbar bg="bright" expand="md" className="border-bottom navbar fixed-top" fluid>
             <Navbar.Brand>
