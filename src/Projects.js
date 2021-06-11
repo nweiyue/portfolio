@@ -94,7 +94,8 @@ export default function Projects(props) {
               <Card.Text>
                 The first version of my personal portfolio website which was
                 used to showcase my past projects. The current website you are
-                on is the new and improved v2.0!
+                on is the new and improved v2.0! Both of them are built entirely
+                from scratch.
               </Card.Text>
               <div className="pb-3">
                 <Badge variant="custom">HTML</Badge>{" "}
@@ -165,8 +166,8 @@ export default function Projects(props) {
             <Card.Body>
               <Card.Title>Duke</Card.Title>
               <Card.Text>
-                Duke is a is a desktop application which allows users to manage
-                their tasks and at the same time acts as a personal chat bot.
+                Duke is a desktop application that allows users to manage
+                their tasks and at the same time acts as a personal chatbot.
               </Card.Text>
               <div className="pb-3">
                 <Badge variant="custom">Java</Badge>{" "}
@@ -228,7 +229,6 @@ export default function Projects(props) {
               >
                 <i className="fab fa-youtube"></i> Demo
               </Button>
-  
             </Card.Body>
           </Card>
           <Card style={{ width: "18rem" }}>
@@ -243,7 +243,7 @@ export default function Projects(props) {
                 <Badge variant="custom">CSS</Badge>{" "}
                 <Badge variant="custom">JS</Badge>
               </div>
-       
+
               <Button
                 className="mr-3"
                 variant="github"
@@ -263,7 +263,6 @@ export default function Projects(props) {
               >
                 <i className="fas fa-gamepad"></i> Play
               </Button>
-   
             </Card.Body>
           </Card>
           <Card style={{ width: "18rem" }}>
@@ -282,7 +281,7 @@ export default function Projects(props) {
                 <Badge variant="custom">Matplotlib</Badge>{" "}
                 <Badge variant="custom">Seaborn</Badge>
               </div>
- 
+
               <Button
                 className="mr-3"
                 variant="github"
@@ -308,7 +307,6 @@ export default function Projects(props) {
               >
                 <i className="fab fa-medium"></i> Read
               </Button>
-          
             </Card.Body>
           </Card>
         </CardDeck>

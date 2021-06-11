@@ -45,12 +45,12 @@ export default function Experiences(props) {
                   <li>
                     Designed, developed and tested end to end automation
                     solutions which are used to gather and process data from
-                    different web reports, saving at least 30 manpower hours per
-                    month on average
+                    different web reports, thereby saving preparation time for
+                    meetings by more than 200%
                   </li>
                   <li>
                     Incorporated Python scripts and Excel(SQL) databases with
-                    RPA tools to improve performance of bots
+                    RPA tools to improve performance and scalability of bots
                   </li>
                 </ul>
                 <div>
