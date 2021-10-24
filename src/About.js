@@ -46,18 +46,17 @@ export default function About(props) {
                 <Media.Body className="sm-12">
                   <h3>Who am I?</h3>
                   <p className="about-tools">
-                    I am an incoming penultimate year student pursuing a degree
+                    I am a penultimate year student pursuing a degree
                     in Bachelor of Computing (Honours), Computer Science at the
-                    National University of Singapore. My interests lie in
-                    full-stack web development as well as artificial
-                    intelligence. Currently, I am interning in GlobalFoundries,
-                    a global major chip manufacturer as an RPA developer. During
-                    my free time, I like to explore new technologies and tools
-                    by using them to build small side projects. Through these
-                    side projects, I have managed to learn and apply several
+                    <span> National University of Singapore</span>. My interests lie in
+                    <span> full-stack web development</span> as well as <span>artificial
+                    intelligence</span>. <br/><br/>
+                    During my free time, I like to explore new 
+                    technologies and tools by using them to build small side projects.
+                    Through these side projects, I have managed to learn and apply several
                     tools and frameworks such as <span>React.js</span>,
                     <span> Node.js</span>, <span>Bootstrap</span> and
-                    <span> PostgreSQL</span>. If you have any interesting
+                    <span> MongoDB</span>. If you have any interesting
                     opportunities regarding application(mobile/web/desktop)
                     development or would like to collaborate, please feel free
                     to hit me up! :)

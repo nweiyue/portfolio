@@ -12,7 +12,6 @@ export default function Home(props) {
           <p>
             i'm <span className="intro-name">WEI YUE;</span>
           </p>
-          <p className="intro-welcome">welcome to my site;</p>
         </div>
       </div>
     </div>
