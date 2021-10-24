@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.00c4a8b3.chunk.css",
-    "main.js": "/portfolio/static/js/main.69aab57b.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.69aab57b.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.143ba703.chunk.css",
+    "main.js": "/portfolio/static/js/main.075892ee.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.075892ee.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.76232b81.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.76232b81.js.map",
     "static/css/2.4c97ca4f.chunk.css": "/portfolio/static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.e7bce082.chunk.js": "/portfolio/static/js/2.e7bce082.chunk.js",
-    "static/js/2.e7bce082.chunk.js.map": "/portfolio/static/js/2.e7bce082.chunk.js.map",
+    "static/js/2.fb9bbbad.chunk.js": "/portfolio/static/js/2.fb9bbbad.chunk.js",
+    "static/js/2.fb9bbbad.chunk.js.map": "/portfolio/static/js/2.fb9bbbad.chunk.js.map",
     "index.html": "/portfolio/index.html",
     "static/css/2.4c97ca4f.chunk.css.map": "/portfolio/static/css/2.4c97ca4f.chunk.css.map",
-    "static/css/main.00c4a8b3.chunk.css.map": "/portfolio/static/css/main.00c4a8b3.chunk.css.map",
-    "static/js/2.e7bce082.chunk.js.LICENSE.txt": "/portfolio/static/js/2.e7bce082.chunk.js.LICENSE.txt",
-    "static/media/GF_logo.a894fdd0.png": "/portfolio/static/media/GF_logo.a894fdd0.png",
+    "static/css/main.143ba703.chunk.css.map": "/portfolio/static/css/main.143ba703.chunk.css.map",
+    "static/js/2.fb9bbbad.chunk.js.LICENSE.txt": "/portfolio/static/js/2.fb9bbbad.chunk.js.LICENSE.txt",
+    "static/media/NUS_logo.fdd64206.jpg": "/portfolio/static/media/NUS_logo.fdd64206.jpg",
     "static/media/atas_thumbnail.36700e02.png": "/portfolio/static/media/atas_thumbnail.36700e02.png",
     "static/media/champion_thumbnail.e7a9a581.png": "/portfolio/static/media/champion_thumbnail.e7a9a581.png",
     "static/media/duke_thumbnail.50aa254f.png": "/portfolio/static/media/duke_thumbnail.50aa254f.png",
@@ -25,8 +25,8 @@
   "entrypoints": [
     "static/js/runtime-main.76232b81.js",
     "static/css/2.4c97ca4f.chunk.css",
-    "static/js/2.e7bce082.chunk.js",
-    "static/css/main.00c4a8b3.chunk.css",
-    "static/js/main.69aab57b.chunk.js"
+    "static/js/2.fb9bbbad.chunk.js",
+    "static/css/main.143ba703.chunk.css",
+    "static/js/main.075892ee.chunk.js"
   ]
 }
