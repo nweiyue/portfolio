@@ -16,12 +16,6 @@ export default function Footer() {
             <a href="https://www.linkedin.com/in/weiyue/" target="_blank" rel="noreferrer">
               <i className="fab fa-linkedin fa-2x"></i>
             </a>
-            <a href="https://t.me/weiyuee" target="_blank" rel="noreferrer">
-              <i className="fab fa-telegram-plane fa-2x"></i>
-            </a>
-            <a href="https://www.instagram.com/weiyueeee/" target="_blank" rel="noreferrer">
-              <i className="fab fa-instagram-square fa-2x"></i>
-            </a>
             <a href="mailto:weiyue16@gmail.com" target="_blank" rel="noreferrer">
               <i className="fas fa-envelope-square fa-2x"></i>
             </a>

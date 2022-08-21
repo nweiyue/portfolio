@@ -137,19 +137,6 @@ export default class Contact extends React.Component {
               />
             </span>
             <span>
-              <SocialIcon
-                url="https://t.me/weiyuee"
-                target="_blank"
-                network="telegram"
-              />
-            </span>
-            <span>
-              <SocialIcon
-                url="https://www.instagram.com/weiyueeee/"
-                target="_blank"
-              />
-            </span>
-            <span>
               <SocialIcon url="mailto:weiyue16@gmail.com" target="_blank" />
             </span>
           </div>
