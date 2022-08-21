@@ -61,7 +61,6 @@ export default function Experiences(props) {
                                         Tech stack:{" "}
                                         <Badge variant="custom">Python</Badge>{" "}
                                         <Badge variant="custom">C++</Badge>{" "}
-                                        <Badge variant="custom">Linux</Badge>{" "}
                                     </h6>
                                 </div>
                             </Col>
